@@ -1,4 +1,7 @@
-// מערך הקטלוגים - יש להרחיב בהתאם לקטלוגים החדשים
+// ===================================================================================
+// DATA SOURCE - המידע על כל הקטלוגים נמצא כאן
+// כדי להוסיף/לעדכן/למחוק קטלוג, יש לערוך רק את המערך הזה
+// ===================================================================================
 const catalogs = [
     {
         title: "מפעל ייצור ריהוט כללי לבית 1",
@@ -111,6 +114,78 @@ const catalogs = [
         url: "https://vipoconnect.github.io/23/",
         thumbnail: "inflatable-tent.webp",
         tags: ["אוהל", "מתנפח", "קמפינג", "טיולים"]
+    },
+    {
+        title: "קטלוג 10",
+        description: "מוצרים מקטלוג 10",
+        category: "other",
+        url: "https://vipocatalog.github.io/10/",
+        thumbnail: "default.webp",
+        tags: ["קטלוג", "מוצרים", "vipo"]
+    },
+    {
+        title: "קטלוג 11",
+        description: "מוצרים מקטלוג 11",
+        category: "other",
+        url: "https://vipocatalog.github.io/11/",
+        thumbnail: "default.webp",
+        tags: ["קטלוג", "מוצרים", "vipo"]
+    },
+    {
+        title: "קטלוג 12",
+        description: "מוצרים מקטלוג 12",
+        category: "other",
+        url: "https://vipocatalog.github.io/12/",
+        thumbnail: "default.webp",
+        tags: ["קטלוג", "מוצרים", "vipo"]
+    },
+    {
+        title: "קטלוג 13",
+        description: "מוצרים מקטלוג 13",
+        category: "other",
+        url: "https://vipocatalog.github.io/13/",
+        thumbnail: "default.webp",
+        tags: ["קטלוג", "מוצרים", "vipo"]
+    },
+    {
+        title: "קטלוג 14",
+        description: "מוצרים מקטלוג 14",
+        category: "other",
+        url: "https://vipocatalog.github.io/14/",
+        thumbnail: "default.webp",
+        tags: ["קטלוג", "מוצרים", "vipo"]
+    },
+    {
+        title: "קטלוג 15",
+        description: "מוצרים מקטלוג 15",
+        category: "other",
+        url: "https://vipocatalog.github.io/15/",
+        thumbnail: "default.webp",
+        tags: ["קטלוג", "מוצרים", "vipo"]
+    },
+    {
+        title: "קטלוג 16",
+        description: "מוצרים מקטלוג 16",
+        category: "other",
+        url: "https://vipocatalog.github.io/16/",
+        thumbnail: "default.webp",
+        tags: ["קטלוג", "מוצרים", "vipo"]
+    },
+    {
+        title: "קטלוג 17",
+        description: "מוצרים מקטלוג 17",
+        category: "other",
+        url: "https://vipocatalog.github.io/17/",
+        thumbnail: "default.webp",
+        tags: ["קטלוג", "מוצרים", "vipo"]
+    },
+    {
+        title: "קטלוג 18",
+        description: "מוצרים מקטלוג 18",
+        category: "other",
+        url: "https://vipocatalog.github.io/18/",
+        thumbnail: "default.webp",
+        tags: ["קטלוג", "מוצרים", "vipo"]
     }
 ];
 
@@ -131,10 +206,27 @@ function searchCatalogs(query) {
     });
 }
 
+// פונקציה ליצירת כרטיס קטלוג בודד
+function createCatalogCard(catalog) {
+    return `
+        <div class="catalog-card">
+            <a href="${catalog.url}" target="_blank">
+                <div class="catalog-thumbnail">
+                    <img src="images/thumbnails/${catalog.thumbnail}" alt="${catalog.title}">
+                </div>
+                <h3>${catalog.title}</h3>
+                <p>${catalog.description}</p>
+            </a>
+        </div>
+    `;
+}
+
 // פונקציית רנדור תוצאות חיפוש
 function renderSearchResults(results) {
     const mainContent = document.querySelector('main');
     
+    if (!mainContent) return;
+
     if (results.length === 0) {
         mainContent.innerHTML = `
             <section class="search-results">
@@ -145,35 +237,82 @@ function renderSearchResults(results) {
         return;
     }
     
-    let html = `
+    const resultsHtml = results.map(createCatalogCard).join('');
+    
+    mainContent.innerHTML = `
         <section class="search-results">
             <h2>תוצאות חיפוש (${results.length})</h2>
             <div class="catalogs-grid">
-    `;
-    
-    results.forEach(catalog => {
-        html += `
-            <div class="catalog-card">
-                <a href="${catalog.url}" target="_blank">
-                    <div class="catalog-thumbnail">
-                        <img src="images/thumbnails/${catalog.thumbnail}" alt="${catalog.title}">
-                    </div>
-                    <h3>${catalog.title}</h3>
-                    <p>${catalog.description}</p>
-                </a>
-            </div>
-        `;
-    });
-    
-    html += `
+                ${resultsHtml}
             </div>
         </section>
     `;
-    
-    mainContent.innerHTML = html;
 }
 
-// המתן לטעינת הדף
+// ===================================================================================
+// DYNAMIC CONTENT RENDERING - טעינת התוכן הדינמי
+// ===================================================================================
+
+// פונקציה לטעינת התוכן של דף הבית
+function renderIndexPage() {
+    const featuredContainer = document.querySelector('.featured-catalogs .catalogs-grid');
+    const newestContainer = document.querySelector('.newest-catalogs .catalogs-grid');
+
+    if (featuredContainer && newestContainer) {
+        // קטלוגים מומלצים (לדוגמה, 4 הראשונים מקטגוריות שונות)
+        const featured = [
+            catalogs.find(c => c.category === 'furniture'),
+            catalogs.find(c => c.category === 'wellness'),
+            catalogs.find(c => c.category === 'sports'),
+            catalogs.find(c => c.category === 'inflatables'),
+        ].filter(Boolean); // filter(Boolean) to remove any undefined if a category is missing
+
+        // קטלוגים חדשים (לדוגמה, 4 האחרונים שנוספו)
+        const newest = catalogs.slice(-4).reverse();
+
+        featuredContainer.innerHTML = featured.map(createCatalogCard).join('');
+        newestContainer.innerHTML = newest.map(createCatalogCard).join('');
+    }
+}
+
+// פונקציה לטעינת התוכן של דף הקטגוריות
+function renderCategoriesPage() {
+    const mainContent = document.querySelector('main');
+    if (!mainContent) return;
+
+    const categories = {
+        'furniture': { name: 'ריהוט ובית', icon: 'fa-couch' },
+        'wellness': { name: 'בריאות ונוחות', icon: 'fa-spa' },
+        'inflatables': { name: 'מוצרים מתנפחים', icon: 'fa-wind' },
+        'camping': { name: 'קמפינג וטיולים', icon: 'fa-campground' },
+        'sports': { name: 'ספורט ופנאי', icon: 'fa-swimmer' },
+        'business': { name: 'מוצרים לעסקים', icon: 'fa-store' },
+        'other': { name: 'שונות', icon: 'fa-box' }
+    };
+
+    let pageHtml = '';
+    for (const categoryId in categories) {
+        const catalogsInCategory = catalogs.filter(c => c.category === categoryId);
+        if (catalogsInCategory.length > 0) {
+            const category = categories[categoryId];
+            const catalogsHtml = catalogsInCategory.map(createCatalogCard).join('');
+            
+            pageHtml += `
+                <section class="category-section" id="${categoryId}">
+                    <h2><i class="fas ${category.icon}"></i> ${category.name}</h2>
+                    <div class="catalogs-grid">
+                        ${catalogsHtml}
+                    </div>
+                </section>
+            `;
+        }
+    }
+
+    mainContent.innerHTML = pageHtml;
+}
+
+
+// המתן לטעינת הדף וטען את התוכן הרלוונטי
 document.addEventListener('DOMContentLoaded', function() {
     const searchInput = document.getElementById('searchInput');
     const searchForm = document.getElementById('searchForm');
@@ -197,7 +336,7 @@ document.addEventListener('DOMContentLoaded', function() {
         console.error('טופס החיפוש לא נמצא!');
     }
     
-    // בדיקה אם יש פרמטר חיפוש ב-URL
+    // בדיקה אם יש פרמטר חיפוש ב-URL, אם כן, הצג תוצאות
     const urlParams = new URLSearchParams(window.location.search);
     const queryParam = urlParams.get('q');
     
@@ -205,5 +344,12 @@ document.addEventListener('DOMContentLoaded', function() {
         searchInput.value = queryParam;
         const results = searchCatalogs(queryParam);
         renderSearchResults(results);
+    } else {
+        // אם אין חיפוש, טען את התוכן הרגיל של הדף
+        if (document.querySelector('.featured-catalogs')) {
+            renderIndexPage();
+        } else if (document.querySelector('body.page-categories')) { // We will add this class to the body in categories.html
+            renderCategoriesPage();
+        }
     }
 });
