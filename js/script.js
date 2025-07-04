@@ -15,7 +15,7 @@ const catalogs = [
         title: "ספות יוקרה א",
         description: "ספות יוקרה במחירים משתלמים",
         category: "furniture",
-        url: "https://vipoconnect.github.io/18/",
+        url: "https://lp6.me/qqZH7",
         thumbnail: "luxury-sofas-1.webp",
         tags: ["ספות", "ריהוט", "יוקרה", "סלון", "בית"]
     },
@@ -31,7 +31,7 @@ const catalogs = [
         title: "ספות יוקרה ג",
         description: "ספות יוקרה במחירים משתלמים",
         category: "furniture",
-        url: "https://vipoconnect.github.io/20/",
+        url: "https://lp6.me/y0Xcx",
         thumbnail: "luxury-sofas-3.webp",
         tags: ["ספות", "ריהוט", "יוקרה", "סלון", "בית"]
     },
@@ -99,14 +99,7 @@ const catalogs = [
         thumbnail: "inflatable-factory.webp",
         tags: ["מתנפחים", "מזרונים", "אוהלים", "מוצרים מתנפחים"]
     },
-    {
-        title: "מזרונים מתנפחים",
-        description: "מזרונים מתנפחים איכותיים",
-        category: "inflatables",
-        url: "https://vipocatalog.github.io/03/",
-        thumbnail: "inflatable-mattress.webp",
-        tags: ["מזרונים", "מתנפחים", "שינה", "קמפינג"]
-    },
+
     {
         title: "קטלוג אוהל מתנפח 1",
         description: "אוהלים מתנפחים מגוונים",
@@ -116,76 +109,254 @@ const catalogs = [
         tags: ["אוהל", "מתנפח", "קמפינג", "טיולים"]
     },
     {
-        title: "קטלוג 10",
-        description: "מוצרים מקטלוג 10",
-        category: "other",
+        title: "H3 מפעל ייצור מתנפחים 01",
+        description: "מגוון מוצרים מתנפחים איכותיים",
+        category: "inflatables",
         url: "https://vipocatalog.github.io/10/",
-        thumbnail: "default.webp",
-        tags: ["קטלוג", "מוצרים", "vipo"]
+        thumbnail: "page_10.webp",
+        tags: ["מתנפחים", "מזרונים", "אוהלים", "מוצרים מתנפחים"]
     },
     {
-        title: "קטלוג 11",
-        description: "מוצרים מקטלוג 11",
-        category: "other",
+        title: "מפעל ייצור אוהלים 01",
+        description: "קטלוג מוצרי אוהלים ממפעל",
+        category: "camping",
         url: "https://vipocatalog.github.io/11/",
-        thumbnail: "default.webp",
-        tags: ["קטלוג", "מוצרים", "vipo"]
+        thumbnail: "page_11.webp",
+        tags: ["אוהלים", "קמפינג", "טיולים", "מפעל"]
     },
     {
-        title: "קטלוג 12",
-        description: "מוצרים מקטלוג 12",
-        category: "other",
+        title: "מפעל ייצור לונה פרק 01",
+        description: "מתקנים ומשחקים ללונה פארק",
+        category: "business",
         url: "https://vipocatalog.github.io/12/",
-        thumbnail: "default.webp",
-        tags: ["קטלוג", "מוצרים", "vipo"]
+        thumbnail: "page_12.webp",
+        tags: ["לונה פארק", "מתקנים", "משחקים", "בילוי", "עסקים"]
     },
+
     {
-        title: "קטלוג 13",
-        description: "מוצרים מקטלוג 13",
-        category: "other",
-        url: "https://vipocatalog.github.io/13/",
-        thumbnail: "default.webp",
-        tags: ["קטלוג", "מוצרים", "vipo"]
-    },
-    {
-        title: "קטלוג 14",
-        description: "מוצרים מקטלוג 14",
-        category: "other",
+        title: "מפעל ייצור מתנפחים 02",
+        description: "מגוון מוצרים מתנפחים איכותיים",
+        category: "inflatables",
         url: "https://vipocatalog.github.io/14/",
-        thumbnail: "default.webp",
-        tags: ["קטלוג", "מוצרים", "vipo"]
+        thumbnail: "page_14.webp",
+        tags: ["מתנפחים", "מזרונים", "אוהלים", "ימי", "פנאי"]
     },
     {
-        title: "קטלוג 15",
-        description: "מוצרים מקטלוג 15",
-        category: "other",
+        title: "מפעל ייצור מתנפחים לחצר 01",
+        description: "מתנפחים ומשחקים לחצר ולגינה",
+        category: "inflatables",
         url: "https://vipocatalog.github.io/15/",
-        thumbnail: "default.webp",
-        tags: ["קטלוג", "מוצרים", "vipo"]
+        thumbnail: "page_15.webp",
+        tags: ["מתנפחים", "חצר", "גינה", "משחקים", "בריכות", "פעילות"]
     },
     {
-        title: "קטלוג 16",
-        description: "מוצרים מקטלוג 16",
-        category: "other",
+        title: "מפעל ייצור רמקולים 1",
+        description: "רמקולים ומערכות שמע איכותיות",
+        category: "electronics",
         url: "https://vipocatalog.github.io/16/",
-        thumbnail: "default.webp",
-        tags: ["קטלוג", "מוצרים", "vipo"]
+        thumbnail: "page_16.webp",
+        tags: ["רמקולים", "אודיו", "מוזיקה", "שמע", "אלקטרוניקה"]
     },
     {
-        title: "קטלוג 17",
-        description: "מוצרים מקטלוג 17",
-        category: "other",
+        title: "מפעל ייצור מזנון + מקרן",
+        description: "מזנונים ומקרנים לבית",
+        category: "furniture",
         url: "https://vipocatalog.github.io/17/",
-        thumbnail: "default.webp",
-        tags: ["קטלוג", "מוצרים", "vipo"]
+        thumbnail: "page_17.webp",
+        tags: ["מזנון", "מקרן", "ריהוט", "בית", "קולנוע ביתי", "טלוויזיה"]
     },
     {
-        title: "קטלוג 18",
-        description: "מוצרים מקטלוג 18",
-        category: "other",
+        title: "מפעל ייצור פילטר 1",
+        description: "פילטרים ומערכות סינון מים",
+        category: "home",
         url: "https://vipocatalog.github.io/18/",
-        thumbnail: "default.webp",
-        tags: ["קטלוג", "מוצרים", "vipo"]
+        thumbnail: "page_18.webp",
+        tags: ["פילטר", "סינון מים", "איכות מים", "בריאות", "מערכות סינון"]
+    },
+    {
+        title: "כסאות בר",
+        description: "כסאות בר מעוצבים",
+        category: "furniture",
+        url: "https://lp6.me/MZKP3",
+        thumbnail: "new/25.webp",
+        tags: ["כסאות בר", "ריהוט", "מטבח", "פינת אוכל", "עיצוב הבית"]
+    },
+    {
+        title: "ספות מעוצבות",
+        description: "ספות יוקרה מעוצבות",
+        category: "furniture",
+        url: "https://lp6.me/8Qyup",
+        thumbnail: "new/19.webp",
+        tags: ["ספות", "ריהוט", "סלון", "עיצוב הבית", "נוחות"]
+    },
+    {
+        title: "כורסאות עיסוי",
+        description: "כורסאות עיסוי חדשניות",
+        category: "wellness",
+        url: "https://lp6.me/Af7eO",
+        thumbnail: "new/30.webp",
+        tags: ["כורסאות עיסוי", "עיסוי", "בריאות", "רווחה", "טיפוח", "פינוק"]
+    },
+    {
+        title: "ג'קוזי",
+        description: "ג'קוזי מפנק במחיר אטרקטיבי",
+        category: "wellness",
+        url: "https://lp6.me/sG6yQ",
+        thumbnail: "new/26.webp",
+        tags: ["ג'קוזי", "ספא", "פינוק", "בריאות", "רווחה", "אמבטיה"]
+    },
+    {
+        title: "דשא סינטטי",
+        description: "דשא סינטטי איכותי לחצר ולגינה",
+        category: "outdoor",
+        url: "https://lp6.me/Icq4b",
+        thumbnail: "new/34.webp",
+        tags: ["דשא סינטטי", "גינה", "עיצוב חוץ", "חצר", "נוי"]
+    },
+    {
+        title: "ספות סלון 2",
+        description: "ספות מעוצבות לסלון",
+        category: "furniture",
+        url: "https://lp6.me/snhha",
+        thumbnail: "new/28.webp",
+        tags: ["ספות", "סלון", "ריהוט", "עיצוב הבית", "נוחות"]
+    },
+    {
+        title: "מסכי חוץ",
+        description: "מסכי תצוגה לשימוש חיצוני",
+        category: "electronics",
+        url: "https://lp6.me/uLv04",
+        thumbnail: "new/36.webp",
+        tags: ["מסכים", "חוץ", "טכנולוגיה", "פרסום", "עסקים"]
+    },
+    {
+        title: "מסכי לד",
+        description: "מסכי לד איכותיים למגוון שימושים",
+        category: "electronics",
+        url: "https://lp6.me/sM8V1",
+        thumbnail: "new/41.webp",
+        tags: ["מסכי לד", "אלקטרוניקה", "טכנולוגיה", "תצוגה", "חיסכון באנרגיה"]
+    },
+    {
+        title: "דף A4",
+        description: "נייר משרדי איכותי",
+        category: "business",
+        url: "https://lp6.me/aIcAa",
+        thumbnail: "new/23.webp",
+        tags: ["נייר", "הדפסה", "משרד", "ציוד משרדי"]
+    },
+
+    {
+        title: "סירות ספורט",
+        description: "סירות ספורט מתקדמות",
+        category: "water",
+        url: "https://lp6.me/kd2BP",
+        thumbnail: "new/29.webp",
+        tags: ["סירות", "ספורט ימי", "ים", "שייט", "נופש"]
+    },
+    {
+        title: "סככות וסכך",
+        description: "פתרונות הצללה למרפסת ולחצר",
+        category: "outdoor",
+        url: "https://lp6.me/6Fmy1",
+        thumbnail: "new/31.webp",
+        tags: ["סכך", "הצללה", "חצר", "מרפסת", "גינה", "קיץ"]
+    },
+    {
+        title: "כורסאות וספות",
+        description: "מגוון כורסאות וספות לסלון",
+        category: "furniture",
+        url: "https://lp6.me/hUYAQ",
+        thumbnail: "new/22.webp",
+        tags: ["כורסאות", "ספות", "סלון", "ריהוט", "נוחות"]
+    },
+    {
+        title: "חלונות לבית",
+        description: "חלונות איכותיים במחירי מפעל",
+        category: "home",
+        url: "https://lp6.me/oUghk",
+        thumbnail: "new/38.webp",
+        tags: ["חלונות", "בית", "בנייה", "שיפוץ", "בידוד"]
+    },
+    {
+        title: "פרגולות מעוצבות",
+        description: "פרגולות איכותיות לחצר ולגינה",
+        category: "outdoor",
+        url: "https://lp6.me/4Xrbg",
+        thumbnail: "new/32.webp",
+        tags: ["פרגולות", "גינה", "חצר", "הצללה", "עיצוב חוץ"]
+    },
+    {
+        title: "מיטות",
+        description: "מיטות איכותיות בעיצוב חדשני",
+        category: "furniture",
+        url: "https://lp6.me/XjGWY",
+        thumbnail: "new/24.webp",
+        tags: ["מיטות", "חדר שינה", "ריהוט", "נוחות", "עיצוב פנים"]
+    },
+    {
+        title: "משקפי עיסוי",
+        description: "משקפי עיסוי חדשניים",
+        category: "wellness",
+        url: "https://lp6.me/sACMN",
+        thumbnail: "new/27.webp",
+        tags: ["משקפי עיסוי", "עיסוי", "בריאות", "רווחה", "טיפוח"]
+    },
+    {
+        title: "סכך איכותי",
+        description: "סכך לסוכה ולמרפסת",
+        category: "outdoor",
+        url: "https://lp6.me/VaSf6",
+        thumbnail: "new/33.webp",
+        tags: ["סכך", "סוכות", "הצללה", "חצר", "מרפסת"]
+    },
+    {
+        title: "אוהל איגלו",
+        description: "אוהלי איגלו איכותיים לקמפינג",
+        category: "camping",
+        url: "https://lp6.me/iNCOx",
+        thumbnail: "new/20.webp",
+        tags: ["איגלו", "אוהלים", "קמפינג", "טיולים", "שטח"]
+    },
+    {
+        title: "יחידות נופש",
+        description: "יחידות נופש להשכרה ולמכירה",
+        category: "realestate",
+        url: "https://lp6.me/Tsysy",
+        thumbnail: "new/37.webp",
+        tags: ["יחידות נופש", "נדלן", "תיירות", "נופש", "צימרים"]
+    },
+    {
+        title: "דלתות מעוצבות",
+        description: "דלתות איכותיות לבית",
+        category: "home",
+        url: "https://lp6.me/KuSxh",
+        thumbnail: "new/39.webp",
+        tags: ["דלתות", "בית", "עיצוב פנים", "שיפוץ", "בנייה"]
+    },
+    {
+        title: "חיפוי עץ",
+        description: "חיפויי עץ איכותיים לבית",
+        category: "home",
+        url: "https://lp6.me/UTYvj",
+        thumbnail: "new/40.webp",
+        tags: ["חיפוי עץ", "עץ", "עיצוב פנים", "קירות", "רצפה"]
+    },
+    {
+        title: "חיפוי חוץ",
+        description: "חיפויים איכותיים לקירות חוץ",
+        category: "outdoor",
+        url: "https://lp6.me/kXZgV",
+        thumbnail: "new/35.webp",
+        tags: ["חיפוי חוץ", "בנייה", "עיצוב חוץ", "קירות", "איטום"]
+    },
+    {
+        title: "מזרונים מתנפחים",
+        description: "מזרונים מתנפחים איכותיים לשינה נוחה",
+        category: "inflatables",
+        url: "https://vipocatalog.github.io/03/",
+        thumbnail: "new/42.webp",
+        tags: ["מזרונים", "מתנפחים", "שינה", "נוחות", "אירוח"]
     }
 ];
 
@@ -286,6 +457,10 @@ function renderCategoriesPage() {
         'inflatables': { name: 'מוצרים מתנפחים', icon: 'fa-wind' },
         'camping': { name: 'קמפינג וטיולים', icon: 'fa-campground' },
         'sports': { name: 'ספורט ופנאי', icon: 'fa-swimmer' },
+        'outdoor': { name: 'מוצרי חוץ', icon: 'fa-tree' },
+        'electronics': { name: 'מוצרי אלקטרוניקה', icon: 'fa-tv' },
+        'realestate': { name: 'נדל"ן', icon: 'fa-home' },
+        'home': { name: 'מוצרי בית', icon: 'fa-door-open' },
         'business': { name: 'מוצרים לעסקים', icon: 'fa-store' },
         'other': { name: 'שונות', icon: 'fa-box' }
     };

@@ -47,13 +47,35 @@ header {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.logo-container {
+/* עיצוב לוגו טקסטואלי */
+.logo-text {
     margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
 }
 
-.logo {
-    height: 60px;
-    width: auto;
+.logo-text-vipo {
+    font-size: 3.5rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3), 0 0 10px rgba(255, 255, 255, 0.5);
+    background: linear-gradient(45deg, #ffffff 20%, #ff6b00 50%, #ffffff 80%);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s linear infinite;
+    position: relative;
+    display: inline-block;
+    padding: 0.3rem 1.5rem;
+    border-radius: 8px;
+}
+
+@keyframes shine {
+    to {
+        background-position: 200% center;
+    }
 }
 
 header h1 {
